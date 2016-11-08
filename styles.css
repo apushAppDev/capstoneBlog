@@ -95,9 +95,9 @@ body{
 	position: absolute;
 	margin-top: 0%;
 	margin-left: 1px;
-	border-color: #000;
+/*	border-color: #000;
 	border-weight: 2px;
-	border-style: solid;
+	border-style: solid;*/
 	padding-top: 0%;
 	color: #000;
 	height: 92%;
@@ -110,34 +110,49 @@ body{
 	position: absolute;
 	margin-top: 0%;
 	margin-left: 1px;
-	border-color: #000;
+/*	border-color: #000;
 	border-weight: 2px;
-	border-style: solid;
+	border-style: solid;*/
 	padding-top: 0%;
-	color: #000;
 	height: 92%;
 	top: 8%;
 	width: 12%;
 	left:0%;
+	color: #000;
+	background-color: #fff;
 	}
 
 #teacherStatsPanel{
 	position: absolute;
 	margin-top: 0%;
-	margin-left: 1px;
-	border-color: #000;
+	margin-left: 2px;
+/*	border-color: #000;
 	border-weight: 2px;
-	border-style: solid;
+	border-style: solid;*/
 	padding-top: 0%;
-	color: #000;
 	height: 92%;
 	top: 8%;
 	width:18%;
 	left: 82%;
+	color: #000;
+	background-color: #bfbfbf;
+	
+}
+
+table {
+	margin-left:2px;
+    border-collapse: collapse;
+    width: 97%;
+}
+
+table, th, td {
+	    border: 1px solid black;
 
 }
 
-
+.leftColumn{
+	width: 22%;
+}
 
 
 
