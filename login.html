@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login to the Gawleflower</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    	<div class="loginFrame">
+            <h1>Login Here: </h1>
+        </div>
+        <div class="loginBox" ng-app="">
+            <table>
+            <tr>
+                <th><p style="float: right">Email: </p></th>
+                <th><div class="floatLeft"><input type="text" ng-model="name" placeholder="Email"></div></th>
+            </tr><tr>
+                <th><p style="float: right">Password: </p></th>
+                <th><div class="floatLeft"><input type="text" ng-model="pass" placeholder="Password"></div></th>
+            </tr>
+            </table>
+            <div class="floatLeft"><button class="basicButton"; style="margin-left:10px;">Login!</button></div>
+            
+            <p ng-bind="name"></p>
+            <p ng-bind="pass"></p>
+        </div>
+    </body>
+</html>
