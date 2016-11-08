@@ -1,0 +1,150 @@
+body{
+    background-color: #ffffea;
+    overflow: hidden;
+//    background-image: url("pictures/Wooded_Foothills.jpg");
+}
+
+.loginBox{
+	margin-left: 37%;
+//	margin-top: 28%;
+//	display: inline-block;
+    width: 300px;
+    height: 190px;
+    padding-left: 10px;
+    background-color: #710412;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.basicButton {
+	font-size: 24px;
+	text-align: center;
+	color: #000;
+	background-color: #ffffea;
+//	border-width: 3px;
+//	border-color: #ffffea;
+	border-radius: 15px;
+}
+
+.fancyButton {
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #710412;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+  
+.button:hover {
+	background-color: #3e8e41
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.loginFrame{
+	margin-left: 37%;
+	margin-top: 17%;
+	width: 420px;
+	padding-left: 10px;
+	
+}
+
+
+
+.marquee{
+	width: 100%;
+	height: 100%;
+	font-size:83px;
+//	scrollamount: 5;
+//	jump size in pixels - default is 6;
+//	scrolldelay: ;
+//	refresh rate in milliseconds - default is 200;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: Right;
+}
+
+.topBar{
+	position: absolute;
+	width:100%;
+	height:8%;
+	top: 0%;
+	left:0%;
+	background-color: #000;
+	color: #fff;
+	margin-top: 0%;
+	border-weight: 0;
+	padding-top: 0%;
+}
+
+.LiveAssignment{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 1px;
+	border-color: #000;
+	border-weight: 2px;
+	border-style: solid;
+	padding-top: 0%;
+	color: #000;
+	height: 92%;
+	top: 8%;
+	width: 70%;
+	left: 12%;
+}
+
+#teacherAssignmentMenu{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 1px;
+	border-color: #000;
+	border-weight: 2px;
+	border-style: solid;
+	padding-top: 0%;
+	color: #000;
+	height: 92%;
+	top: 8%;
+	width: 12%;
+	left:0%;
+	}
+
+#teacherStatsPanel{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 1px;
+	border-color: #000;
+	border-weight: 2px;
+	border-style: solid;
+	padding-top: 0%;
+	color: #000;
+	height: 92%;
+	top: 8%;
+	width:18%;
+	left: 82%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
