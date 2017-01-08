@@ -6,28 +6,111 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript">
+	        function createAccount(){
+	        	/*window.alert("see, it does work");*/
+	        
+	        
+	        	var firstName = document.getElementById('firstName').value;
+	        	var lastName = document.getElementById('lastName').value;
+	        	var username = document.getElementById('username').value;
+	        	var email = document.getElementById('email').value;
+	        	var pass = document.getElementById('pass').value;
+	        	var period = document.getElementById('period').value;
+
+
+				//check for blank strings, alert and stop procedure if blanks exist
+	        	var errMessage = " ";
+	        	if(firstName == ""){
+	        		errMessage = "First Name";
+	        		window.alert(errMessage + " cannot be blank!");
+	        	}
+	        	else if(lastName == ""){
+	        		errMessage = "Last Name";
+	        		window.alert(errMessage + " cannot be blank!");
+	        	}
+	        	else if(username == ""){
+	        		errMessage = "Username";
+	        		window.alert(errMessage + " cannot be blank!");
+	        	}
+	        	else if(email == ""){
+	        		errMessage = "Email";
+	        		window.alert(errMessage + " cannot be blank!");
+	        	}
+	        	else if(email.includes("@") == false){
+	        		window.alert("please enter a valid email address");
+	        	}
+	        	else if(pass == ""){
+	        		errMessage = "Password";
+	        		window.alert(errMessage + " cannot be blank!");
+	        	}
+	        	else if(period == ""){
+	        		errMessage = "Period";
+	        		window.alert(errMessage + " cannot be blank!");
+        		}
+
+        		/**
+	        	var newAccountRequest = new XMLHttpRequest(){
+	        		
+	        		//write into an xml doc here
+	        		
+	        		//send to server, serverside functions handle the rest of account creation
+	        		send(POST, true);	
+	        	}*/
+	        	
+	        	if(((email.includes("1") || email.includes("2")) == true) && (email.includes("@fpsct.org") == true)){
+		        	window.location = "studentDash.html";
+	        	}
+	        	else if(email.contains("@fpsct.org") == true){
+		        	window.location = "teacherDash.html";
+	        	}
+	        	else{
+	        		window.alert("Please enter an email address registered to the domain!");
+	        	}
+	        	
+	        }
+        </script>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-    	<div class="loginFrame">
+    	<div class="topBar">
+			<a href="index.html" style="font-size: 32px; text-decoration: none; color:#fff;">lmao lorem ipsum deez nuts brah</a>
+		</div>
+    	<div class="signupFrame">
             <h1>Create Account: </h1>
         </div>
-        <div class="loginBox" ng-app="">
-            <table>
+        <div class="signupBox">
+            <table class="clearEdges">
             <tr>
-                <th><p style="float: right">Email: </p></th>
-                <th><div class="floatLeft"><input type="text" ng-model="name" placeholder="Email"></div></th>
-            </tr><tr>
-                <th><p style="float: right">Password: </p></th>
-                <th><div class="floatLeft"><input type="text" ng-model="pass" placeholder="Password"></div></th>
+                <th class="clearEdges"><p style="float: right">First Name: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" id="firstName" placeholder="First Name" value=""></div></th>
+            </tr>
+            <tr>
+                <th class="clearEdges"><p style="float: right">Last Name: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" id="lastName" placeholder="Last Name" value=""></div></th>
+            </tr>
+            <tr>
+                <th class="clearEdges"><p style="float: right">Email: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" id="email" placeholder="Email" value=""></div></th>
+            </tr>
+            <tr>
+                <th class="clearEdges"><p style="float: right">Username: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" id="username" placeholder="Username" value=""></div></th>
+            </tr>
+            <tr>
+                <th class="clearEdges"><p style="float: right">Password: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="password" id="pass" placeholder="Password" value=""></div></th>
+            </tr>
+            <tr>
+                <th class="clearEdges"><p style="float: right">Period: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" id="period" placeholder="Period" value=""></div></th>
             </tr>
             </table>
             
-            <div class="floatLeft"><button class="basicButton"; style="margin-left:10px;">Create!</button></div>
             
-            
-            <p ng-bind="name"></p>
-            <p ng-bind="pass"></p>
+            <div class="floatLeft"><button class="basicButton"; style="margin-left:10px"; onclick="createAccount();">Create!</button></div>
         </div>
     </body>
 </html>
+
+

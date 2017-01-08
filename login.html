@@ -6,26 +6,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript">
+        	function login(){
+        		
+        		//map user-entered data to variables
+	        	var email = document.getElementById('email').value;
+	        	var pass = document.getElementById('pass').value;
+
+	        	//package and send to server for check
+	        	
+	        	
+	        	//process returned info - redirect to dash or prompt to try again
+	        	
+        	}
+        
+        </script>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+    	<div class="topBar">
+			<a href="index.html" style="font-size: 32px; text-decoration: none; color:#fff;">lmao lorem ipsum deez nuts brah</a>
+		</div>
     	<div class="loginFrame">
             <h1>Login Here: </h1>
         </div>
         <div class="loginBox" ng-app="">
-            <table>
-            <tr>
-                <th><p style="float: right">Email: </p></th>
-                <th><div class="floatLeft"><input type="text" ng-model="name" placeholder="Email"></div></th>
-            </tr><tr>
-                <th><p style="float: right">Password: </p></th>
-                <th><div class="floatLeft"><input type="text" ng-model="pass" placeholder="Password"></div></th>
+            <table class="clearEdges">
+            <tr class="clearEdges">
+                <th class="clearEdges"><p style="float: right">Email: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" ng-model="name" placeholder="Email" autocomplete="on"></div></th>
+            </tr>
+            <tr class="clearEdges">
+                <th class="clearEdges"><p style="float: right">Password: </p></th>
+                <th class="clearEdges"><div class="floatLeft"><input type="text" ng-model="pass" placeholder="Password" autocomplete="on"></div></th>
             </tr>
             </table>
             <div class="floatLeft"><button class="basicButton"; style="margin-left:10px;">Login!</button></div>
+            <span class="floatRight"><a class="forgotPass" href="fixPass.html"><p style=>Forgot Password?</p></a></span>
             
-            <p ng-bind="name"></p>
-            <p ng-bind="pass"></p>
+
         </div>
     </body>
 </html>

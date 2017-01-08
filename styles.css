@@ -1,15 +1,24 @@
 body{
-    background-color: #ffffea;
+    /*background-color: #ffffea;*/
+    background-color: #fcf3cf;
     overflow: hidden;
-//    background-image: url("pictures/Wooded_Foothills.jpg");
 }
 
 .loginBox{
-	margin-left: 37%;
-//	margin-top: 28%;
-//	display: inline-block;
+	margin-left: 41%;
     width: 300px;
     height: 190px;
+    padding-left: 10px;
+    background-color: #710412;
+    border-radius: 22px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.signupBox{
+	margin-left: 41%;
+    width: 300px;
+    height: 445px;
     padding-left: 10px;
     background-color: #710412;
     border-radius: 22px;
@@ -51,12 +60,37 @@ body{
 }
 
 .loginFrame{
-	margin-left: 37%;
+	margin-left: 41%;
 	margin-top: 17%;
 	width: 420px;
 	padding-left: 10px;
-	
 }
+
+.signupFrame{
+	margin-left: 41%;
+	margin-top: 10%;
+	width: 420px;
+	padding-left: 10px;
+}
+
+.clearEdges{
+    border-color: #fff;
+    border-style: hidden;
+    border-width: 0px;
+}
+
+a.forgotPass:link {
+	color:#000;
+	text-decoration:none;
+}
+a.forgotPass:visited {
+	color:#000;
+	text-decoration:none;
+}
+a.forgotPass:hover {
+	text-decoration:underline;
+}
+
 
 
 
@@ -72,10 +106,12 @@ body{
 
 .floatLeft{
     float: left;
+	margin-left: 2px;
 }
 
 .floatRight{
     float: Right;
+    margin-right: 2px;
 }
 
 .topBar{
@@ -102,8 +138,8 @@ body{
 	color: #000;
 	height: 92%;
 	top: 8%;
-	width: 70%;
-	left: 12%;
+	width: 66%;
+	left: 16%;
 }
 
 #teacherAssignmentMenu{
@@ -116,11 +152,11 @@ body{
 	padding-top: 0%;
 	height: 92%;
 	top: 8%;
-	width: 12%;
+	width: 16%;
 	left:0%;
 	color: #000;
 	background-color: #fff;
-	}
+}
 
 #teacherStatsPanel{
 	position: absolute;
@@ -136,7 +172,38 @@ body{
 	left: 82%;
 	color: #000;
 	background-color: #bfbfbf;
-	
+}
+
+#studentAssignmentMenu{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 1px;
+/*	border-color: #000;
+	border-weight: 2px;
+	border-style: solid;*/
+	padding-top: 0%;
+	height: 92%;
+	top: 8%;
+	width: 16%;
+	left:0%;
+	color: #000;
+	background-color: #fff;
+}
+
+#studentStatsPanel{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 2px;
+/*	border-color: #000;
+	border-weight: 2px;
+	border-style: solid;*/
+	padding-top: 0%;
+	height: 92%;
+	top: 8%;
+	width:18%;
+	left: 82%;
+	color: #000;
+	background-color: #bfbfbf;
 }
 
 table {
